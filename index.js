@@ -837,7 +837,7 @@ function getOption() {
         smooth: true,
         data: xData.map((date, index) => [date, vixData[index]]),
         itemStyle: {
-          color: '#1ae51da0',
+          color: 'rgba(52, 235, 70, 1)',
         },
         lineStyle: {
           width: 1.5
