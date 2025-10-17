@@ -11,122 +11,26 @@ body {
     background-color: #f5f7fa;
     padding: 0;
     margin: 0;
+    /* 新增：实现垂直居中 */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     max-width: 100%;
     padding: 15px;
     margin: 0 auto;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 15px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-header h1 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-    color: #2c3e50;
-}
-
-header p {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.chart-container {
     width: 100%;
-    height: 350px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    padding: 10px;
-}
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.stats-box {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-}
-
-.stats-box h3 {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: #2c3e50;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-}
-
-.stat-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 12px;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-}
-
-.stat-value {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: #2c3e50;
-}
-
-.explanation {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-}
-
-.explanation h4 {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    color: #2c3e50;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-}
-
-.explanation p {
-    font-size: 0.9rem;
-    margin-bottom: 12px;
-    color: #34495e;
-}
-
-.explanation ul {
-    padding-left: 20px;
-    margin-top: 8px;
-}
-
-.explanation li {
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-    color: #34495e;
 }
 
 /* 桌面端布局 */
 @media (min-width: 768px) {
+    body {
+        padding: 20px; /* 为桌面端添加一些内边距 */
+    }
+    
     .container {
         max-width: 1200px;
         padding: 30px;
@@ -148,27 +52,4 @@ header p {
         flex: 3;
         height: 500px;
     }
-
-    .sidebar {
-        flex: 1;
-        min-width: 300px;
-    }
-}
-
-/* 移动端小屏幕优化 */
-@media (max-width: 360px) {
-    .chart-container {
-        height: 300px;
-    }
-
-    .stat-item {
-        flex-direction: column;
-    }
-}
-
-/* 图表工具栏样式优化 */
-.echarts-toolbar {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
 }
