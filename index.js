@@ -9039,6 +9039,7 @@ let statData = [
   { date: "2025-10-16", vix: 25.31 },
   { date: "2025-10-17", vix: 20.78 },
   { date: "2025-10-20", vix: 18.23 },
+  { date: "2025-10-21", vix: 17.87 },
 ];
 
 const chartDom = document.getElementById("chart");
