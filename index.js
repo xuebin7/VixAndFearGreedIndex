@@ -9040,6 +9040,14 @@ let statData = [
   { date: "2025-10-17", vix: 20.78 },
   { date: "2025-10-20", vix: 18.23 },
   { date: "2025-10-21", vix: 17.87 },
+  { date: "2025-10-22", vix: 18.60 },
+  { date: "2025-10-23", vix: 17.30 },
+  { date: "2025-10-24", vix: 16.37 },
+  { date: "2025-10-27", vix: 15.79 },
+  { date: "2025-10-28", vix: 16.42 },
+  { date: "2025-10-29", vix: 16.92 },
+  { date: "2025-10-30", vix: 16.91 },
+  { date: "2025-10-31", vix: 17.44 },
 ];
 
 const chartDom = document.getElementById("chart");
@@ -9123,7 +9131,7 @@ function getOption() {
       confine: true // 确保tooltip在容器内显示
     },
     legend: {
-      data: [ "VIX恐慌指数" ], // 图例
+      data: ["VIX恐慌指数"], // 图例
       top: 30
     },
     xAxis: {
