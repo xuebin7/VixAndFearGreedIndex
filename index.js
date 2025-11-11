@@ -9052,6 +9052,8 @@ let statData = [
   { date: "2025-11-04", vix: 19.00 },
   { date: "2025-11-05", vix: 18.01 },
   { date: "2025-11-06", vix: 19.50 },
+  { date: "2025-11-07", vix: 19.08 },
+  { date: "2025-11-10", vix: 17.60 },
 ];
 
 const chartDom = document.getElementById("chart");
